@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+a {
+  color: DimGray;
+  text-decoration: none;
+}
+h2 {
+  margin-bottom: 15px;
+}
+h1 {
+  color: DarkGray;
+  margin-bottom: 35px;
+}
+#main {
+  color: DarkSeaGreen;
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 4px solid DarkGray;
+  margin: 0;
+  padding: 40px;
+}
+#grid {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+}
+#grid ol {
+  color: DarkGray;
+  width: 230px;
+  border-right: 2px solid DarkGray;
+  margin: 0;
+  padding-left: 45px;
+  padding-bottom: 30px;
+}
+#current {
+  color: RosyBrown;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#body {
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+#lyrics {
+  color: DimGray;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+@media(max-width: 752px) {
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  #body {
+    border-top: 2px solid DarkGray;
+  }
+}

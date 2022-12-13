@@ -12,62 +12,72 @@
   </script>
   <title>초묘(超妙) 너라면 웃어줄 텐데</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .point_color {
+      color: #eba183;
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">초묘(超妙) 가사집</a></h1>
-  <ol>
-    <h2>Songs</h2>
-    <li><a href="01_good_night.html">Good Night</a></li>
-    <li><a href="02_blind.html">Blind</a></li>
-    <li><a href="03_여름밤.html">여름밤</a></li>
-    <li><a href="04_너라면_웃어줄_텐데.html">너라면 웃어줄 텐데</a></li>
-    <li><a href="05_여기_있을래.html">여기 있을래</a></li>
-    <li><a href="06_별빛_아래.html">별빛 아래</a></li>
-    <li><a href="07_손을_잡고_걸어요.html">손을 잡고 걸어요</a></li>
-    <li><a href="08_그_봄은_그_봄이_아니고,_그_여름은_그_여름이_아니었다.html">그 봄은 그 봄이 아니고, 그 여름은 그 여름이 아니었다</a></li>
-    <li><a href="09_덮어가요.html">덮어가요</a></li>
-    <li><a href="10_0251.html">0251</a></li>
-    <li><a href="11_민트_초코_셰이크.html">민트 초코 셰이크</a></li>
-    <li><a href="12_wish.html">Wish</a></li>
-    <li><a href="13_liminal.html">Liminal</a></li>
-  </ol>
-  <h1>
-    초묘(超妙)<br>
-    너라면 웃어줄 텐데
-  </h1><br>
-  <img src="04.jpg" width="430">
-  <p style="margin-top:50px;">
-    흐린 날이네요 눈이 올 것 같아 집에 가고 싶은데<br>
-    그런 날이에요 내 맘 같지 않게 다들 좋아 보여요<br>
-    멍하니 발끝만 보다가 문득 그대 모습 말투 떠오르면
-  </p>
-  <p>
-    하루가 지나가는 시간보다 변해가는 계절보다<br>
-    낯설어진 이 순간이 내겐 전부인 것 같아<br>
-    <u>니가 없는 날이 꿈을 꾼 것처럼<br>
-    이대로 눈을 감으면 돌아갈 것 같아</u>
-  </p>
-  <p>
-    니가 너무 보고 싶던 날들을 말해 줄 수 있다면<br>
-    어떤 말에도 그랬었냐고 넌 웃어줄 텐데
-  </p>
-  <p>
-    하루가 지나가는 시간 변해가는 계절<br>
-    낯설어진 이 순간이 내겐 전부인 것 같아<br>
-    <u>니가 없는 날이 꿈을 꾼 것처럼<br>
-    이대로 눈을 감으면 돌아갈 것 같아</u>
-  </p>
-  <p>
-    니가 너무 보고 싶던 날들을 말해 줄 수 있다면<br>
-    어떤 말들도 어떤 표정도 그 많은 날들을<br>
-    애써 참았던 눈물이 말해 줄 수 있다면<br>
-    너는 나의 모든 걸 감싸 안아주듯 웃어줄 것 같아
-  </p>
-  <p>
-    흐린 날이네요 눈이 올 것 같아 집에 가고 싶은데
-  </p>
-  <p style="margin-top:50px;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tdvX_ucXtn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
+  <a href="index.html"><h1 id="main">초묘(超妙) 가사집</h1></a>
+  <div id="grid">
+    <ol>
+      <h2>Songs</h2>
+      <li><a href="01_good_night.html">Good Night</a></li>
+      <li><a href="02_blind.html">Blind</a></li>
+      <li><a href="03_여름밤.html">여름밤</a></li>
+      <li><a href="04_너라면_웃어줄_텐데.html" id="current">너라면 웃어줄 텐데</a></li>
+      <li><a href="05_여기_있을래.html">여기 있을래</a></li>
+      <li><a href="06_별빛_아래.html">별빛 아래</a></li>
+      <li><a href="07_손을_잡고_걸어요.html">손을 잡고 걸어요</a></li>
+      <li><a href="08_그_봄은_그_봄이_아니고,_그_여름은_그_여름이_아니었다.html">그 봄은 그 봄이 아니고,<br>그 여름은 그 여름이 아니었다</a></li>
+      <li><a href="09_덮어가요.html">덮어가요</a></li>
+      <li><a href="10_0251.html">0251</a></li>
+      <li><a href="11_민트_초코_셰이크.html">민트 초코 셰이크</a></li>
+      <li><a href="12_wish.html">Wish</a></li>
+      <li><a href="13_liminal.html">Liminal</a></li>
+    </ol>
+    <div id="body">
+      <h1>초묘(超妙)<br>
+        <span class="point_color">너라면 웃어줄 텐데</span></h1>
+      <img src="04.jpg" width="430">
+      <div id="lyrics">
+        <p>
+          흐린 날이네요 눈이 올 것 같아 집에 가고 싶은데<br>
+          그런 날이에요 내 맘 같지 않게 다들 좋아 보여요<br>
+          멍하니 발끝만 보다가 문득 그대 모습 말투 떠오르면
+        </p>
+        <p>
+          하루가 지나가는 시간보다 변해가는 계절보다<br>
+          낯설어진 이 순간이 내겐 전부인 것 같아<br>
+          <strong>니가 없는 날이 꿈을 꾼 것처럼<br>
+          이대로 눈을 감으면 돌아갈 것 같아</strong>
+        </p>
+        <p>
+          니가 너무 보고 싶던 날들을 말해 줄 수 있다면<br>
+          어떤 말에도 그랬었냐고 넌 웃어줄 텐데
+        </p>
+        <p>
+          하루가 지나가는 시간 변해가는 계절<br>
+          낯설어진 이 순간이 내겐 전부인 것 같아<br>
+          <strong>니가 없는 날이 꿈을 꾼 것처럼<br>
+          이대로 눈을 감으면 돌아갈 것 같아</strong>
+        </p>
+        <p>
+          니가 너무 보고 싶던 날들을 말해 줄 수 있다면<br>
+          어떤 말들도 어떤 표정도 그 많은 날들을<br>
+          애써 참았던 눈물이 말해 줄 수 있다면<br>
+          너는 나의 모든 걸 감싸 안아주듯 웃어줄 것 같아
+        </p>
+        <p>
+          흐린 날이네요 눈이 올 것 같아 집에 가고 싶은데
+        </p>
+      </div>
+      <p>
+        <iframe width="430" height="242" src="https://www.youtube.com/embed/tdvX_ucXtn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
